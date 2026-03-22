@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { useState, useRef } from "react";
 import { Input } from "./Components/CubicInput";
@@ -74,6 +72,15 @@ if(inputRef.current){
 
         console.log(a);
     }
+return(
+<div>
+<h2>
+a +"x³+" + b +"x²+"+c+"x+"+d
+</h2>
+</div>
+  
+  )
+  
 }
 
 
