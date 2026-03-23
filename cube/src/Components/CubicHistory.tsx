@@ -6,11 +6,24 @@ export const history = () => {
   // const [b, setB] = useState<number>(0);
   // const [c, setC] = useState<number>(0);
   // const [d, setD] = useState<number>(0);
-    // onclick
+ 
 return(
     <div>
-        // <input type="submit" vaule="Calculate" id="submit">SAVE</input>
-<table>
+        // <button type="submit" vaule="Calculate" id="submit">SAVE</button>
+   // onClick={() => {
+// setA(a)
+ // setB(b)
+  //   setC(c)
+  // setD(d)
+ //   }}
+<table
+  // onClick={() => {
+// a(setA)
+ // b(setB)
+  //   c(setC)
+  // d(setD)
+ //   }}
+    >
 <tr>
 <td>'a'</td>
 <td>'b'</td>
