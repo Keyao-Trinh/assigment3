@@ -1,8 +1,14 @@
 import React, { useRef, useEffect } from 'react';
 import { CubicSolver } from "./Components/CubicEquation";
-export const Graph = (props) => {
+
+
+export const Graph = () => {
     const canvasRef = useRef(null);
     useEffect(() => {
+
+        const a:number = document.getElementById("a") as HTMLElement;
+
+
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
 
@@ -27,9 +33,7 @@ export const Graph = (props) => {
     }, []);
 
     return (
-        <canvas ref={canvasRef} />;
-
-
+        <canvas ref={canvasRef} />
     );
 
 }

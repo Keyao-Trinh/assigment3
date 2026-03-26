@@ -1,17 +1,17 @@
-import { useState } from 'react'
+// import { useState, useRef } from 'react'
 import './App.css'
 
 export const CubicSolver = () => {
 
-  const [a, setA] = useState<number>(0);
-    const [b, setB] = useState<number>(0);
-    const [c, setC] = useState<number>(0);
-    const [d, setD] = useState<number>(0);
+  let a = document.getElementById("a") as HTMLElement;
+  let b = document.getElementById("b") as HTMLElement;
+  let c = document.getElementById("c") as HTMLElement;
+  let d = document.getElementById("d") as HTMLElement;
   
- const handleSubmit (event: React.FormEvent) => {
-    event.preventDefault();
-    const formData = new FormData(form);
- };
+//  const handleSubmit (event: React.FormEvent) => {
+//     event.preventDefault();
+//     const formData = new FormData(form);
+//  };
   
     
 
@@ -19,7 +19,7 @@ export const CubicSolver = () => {
     <div>
 <div>
 <h2>
-a +"x³+" + b +"x²+"+c+"x+"+d
+{a+"x³+" + b +"x²+"+c+"x+"+d}
 </h2>
 </div>
     </div>
