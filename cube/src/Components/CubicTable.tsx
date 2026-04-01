@@ -1,7 +1,4 @@
-    //import { CubicSolver } from "./cube/src/Components/CubicEquation.tsx";
-
-
-export const table = () => {
+export const Table = () => {
 
   const a = Number(document.getElementById("a") as HTMLElement);
   const b = Number(document.getElementById("b") as HTMLElement);
@@ -78,7 +75,6 @@ export const table = () => {
 
     return (
 <div>
-
 <table id="table">
   <tr>
   <th> 
@@ -92,26 +88,28 @@ export const table = () => {
     </tr>
     <tr>
       <th>q</th>
-      <td id="q" type="number">{q}</td>
+      <td id="q"/*type="number"*/ >{q}</td>
     </tr>
     <tr>
       <th>discriminate</th>
-      <td id="dis" type="number">{dis}</td>
+      <td id="dis" /*type="number"*/ >{dis}</td>
     </tr>
     <tr>
       <th>root 1</th>
-      <td id="rootone" type="number">{rootone}</td>
+      <td id="rootone" /*type="number"*/ >{rootone}</td>
     </tr>
     <tr>
       <th>root 2</th>
-      <td id="roottwo" type="number">{roottwo}</td>
+      <td id="roottwo" /*type="number"*/ >{roottwo}</td>
     </tr>
     <tr>
       <th>root 3</th>
-      <td id="rootthree" type="number">{rootthree}</td>
+      <td id="rootthree" /*type="number"*/ >{rootthree}</td>
     </tr>
   </table>
-  
   </div>
     );
 }
+
+
+    //import { CubicSolver } from "./cube/src/Components/CubicEquation.tsx";

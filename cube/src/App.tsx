@@ -1,19 +1,29 @@
-// import { StrictMode } from "react";
-// import { createRoot } from "react-dom/client";
-// import "./index.css";
-// import { App } from "./App.tsx";
+import { CubicSolver } from "./Components/CubicEquation.tsx";
+import { Graph } from "./Components/CubicGraph.tsx";
+// import { History } from "./Components/CubicHistory.tsx";
+import { Input } from "./Components/CubicInput.tsx";
+import { Table } from "./Components/CubicTable.tsx";
 
-// createRoot(document.getElementById("root")!).render(
-//   <StrictMode>
-//     <App />
-//   </StrictMode>,
-// );
-
-import { CubicSolver } from "./Components/CubicEquationticSolver";
 
 export const App = () => {
-  return <> 
-  <CubicSolver />;
+  return (
+
+ <div> 
+  <p>p</p>
+    <Input />
+  {/* <Table />  */}
+    <CubicSolver /> 
+   <Graph /> 
   
-  </>
+  </div>  
+  );
 };
+
+  // {/* <History />; */}
+/* <div> 
+  <Input />
+  <Table />
+   <CubicSolver />
+  <Graph />
+ 
+  </div> */

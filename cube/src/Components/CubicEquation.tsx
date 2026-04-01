@@ -1,5 +1,5 @@
 // import { useState, useRef } from 'react'
-import './App.css'
+//import './App.css'
 
 export const CubicSolver = () => {
 
@@ -11,7 +11,7 @@ export const CubicSolver = () => {
 //  const handleSubmit (event: React.FormEvent) => {
 //     event.preventDefault();
 //     const formData = new FormData(form);
-//  };
+//  };fhf gc
   
     
 
