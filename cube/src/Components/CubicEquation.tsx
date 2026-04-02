@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import { Input } from "./CubicInput.tsx";
 
 //import './App.css'
-
-export const CubicSolver = (aVaule:number) => {
+type abcd = {aVaule:number, bVaule:number, cVaule:number, dVaule:number,}
+export const CubicSolver = ({aVaule, bVaule, cVaule, dVaule}:abcd) => {
 // let a:number=0;
 // let b:number=0;
 // let c:number=0;
@@ -13,10 +13,10 @@ export const CubicSolver = (aVaule:number) => {
   // const [cs, setCs] = useState<number>(0);
   // const [ds, setDs] = useState<number>(0);
 
-  let bs:number = 0;
-  let as:number = 0;
-  let ds:number = 0;
-  let cs:number = 0;
+  let as = aVaule;
+  let bs = bVaule;
+  let cs = cVaule;
+  let ds = dVaule;
 
 
   // useEffect (() => {
@@ -39,7 +39,8 @@ export const CubicSolver = (aVaule:number) => {
 //  };fhf gc    
 
   return (
-    <div onClick={upDate}>
+    <div >
+      {/* <button onClick = {upDate}> e</button> */}
 <div>
 <h2>
 {as+"x³+" + bs +"x²+"+cs+"x+"+ds}
@@ -49,33 +50,5 @@ export const CubicSolver = (aVaule:number) => {
   )
 }
 
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <>
-//       <div>
-//         <a href="https://vite.dev" target="_blank">
-//           <img src={viteLogo} className="logo" alt="Vite logo" />
-//         </a>
-//         <a href="https://react.dev" target="_blank">
-//           <img src={reactLogo} className="logo react" alt="React logo" />
-//         </a>
-//       </div>
-//       <h1>Vite + React</h1>
-//       <div className="card">
-//         <button onClick={() => setCount((count) => count + 1)}>
-//           count is {count}
-//         </button>
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to test HMR
-//         </p>
-//       </div>
-//       <p className="read-the-docs">
-//         Click on the Vite and React logos to learn more
-//       </p>
-//     </>
-//   )
-// }
 
 // export default App

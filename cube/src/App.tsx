@@ -12,7 +12,7 @@ export const App = () => {
   <p>p</p>
     <Input />
   {/* <Table />  */}
-    <CubicSolver /> 
+   {/* <CubicSolver />  */}
    <Graph /> 
   
   </div>  
