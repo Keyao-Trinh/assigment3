@@ -1,9 +1,17 @@
-export const Table = () => {
+import { Input } from "./CubicInput.tsx";
 
-  const a = Number(document.getElementById("a") as HTMLElement);
-  const b = Number(document.getElementById("b") as HTMLElement);
-  const c = Number(document.getElementById("c") as HTMLElement);
-  const d = Number(document.getElementById("d") as HTMLElement);
+type abcd = {aVaule:number, bVaule:number, cVaule:number, dVaule:number,}
+export const Table = ({aVaule, bVaule, cVaule, dVaule}:abcd) => {
+
+  // const a = Number(document.getElementById("a") as HTMLElement);
+  // const b = Number(document.getElementById("b") as HTMLElement);
+  // const c = Number(document.getElementById("c") as HTMLElement);
+  // const d = Number(document.getElementById("d") as HTMLElement);
+
+  let a = aVaule;
+  let b = bVaule;
+  let c = cVaule;
+  let d = dVaule;
 
   let rootthree: number;
   let roottwo: number;
@@ -75,39 +83,42 @@ export const Table = () => {
 
     return (
 <div>
-<table id="table">
+<table id="table" class="p-3 table-fixed border-2 rounded-4xl ">
   <tr>
   <th> 
-  <h1> Table Data
+  <h1 class="p-2 font-serif text-md "> Table Data
+
   </h1> 
   </th>
   </tr>
     <tr>
-      <th>p</th>
-      <td id="p" /*type="number"*/ >{p}</td>
+      <th class="p-1 table-fixed border-2 border-spacing-2"
+      >p</th>
+      <td id="p" /*type="number"*/ class="p-1 table-fixed border-2 border-spacing-2" >{p}</td>
     </tr>
     <tr>
-      <th>q</th>
-      <td id="q"/*type="number"*/ >{q}</td>
+      <th class="p-1 table-fixed border-2 border-spacing-2">q</th>
+      <td id="q"/*type="number"*/ class="p-1 table-fixed border-2 border-spacing-2">{q}</td>
     </tr>
     <tr>
-      <th>discriminate</th>
-      <td id="dis" /*type="number"*/ >{dis}</td>
+      <th class="p-1 table-fixed border-2 border-spacing-2">Discriminate</th>
+      <td id="dis" /*type="number"*/  class="p-1 table-fixed border-2 border-spacing-2">{dis}</td>
     </tr>
     <tr>
-      <th>root 1</th>
-      <td id="rootone" /*type="number"*/ >{rootone}</td>
+      <th class="p-1 table-fixed border-2 border-spacing-2">root 1</th>
+      <td id="rootone" /*type="number"*/ class="p-1 table-fixed border-2 border-spacing-2" >{rootone}</td>
     </tr>
     <tr>
-      <th>root 2</th>
-      <td id="roottwo" /*type="number"*/ >{roottwo}</td>
+      <th class="p-1 table-fixed border-2 border-spacing-2" >root 2</th>
+      <td id="roottwo" /*type="number"*/  class="p-1 table-fixed border-2 border-spacing-2" >{roottwo}</td>
     </tr>
     <tr>
-      <th>root 3</th>
-      <td id="rootthree" /*type="number"*/ >{rootthree}</td>
+      <th class="p-1 table-fixed border-2 border-spacing-2">root 3</th>
+      <td id="rootthree" /*type="number"*/  class="p-1 table-fixed border-2 border-spacing-2" >{rootthree}</td>
     </tr>
   </table>
   </div>
+
     );
 }
 
