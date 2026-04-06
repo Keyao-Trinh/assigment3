@@ -2,6 +2,7 @@
 // import { createRoot } from 'react-dom/client'
 import { CubicSolver } from "./CubicEquation.tsx";
 import { History } from "./CubicHistory.tsx";
+import { Table } from "./CubicTable.txs";
 
 
 import React, { useEffect, useState } from 'react';
@@ -71,6 +72,12 @@ bVaule={b}
 cVaule={c}
 dVaule={d}
 />
+      <Table
+aVaule={a}
+bVaule={b}
+cVaule={c}
+dVaule={d}
+        />
     </div>
   ); 
 };          //function history (props) { return <p>props.numbers[0]</p> //up to 3 for each vaules. {} to use numbers in table but also they need to be remembered!!!
