@@ -9,12 +9,12 @@ export const App = () => {
   return (
 
  <div> 
-  <p>p</p>
+  {/* <p></p> */}
     <Input />
   {/* <Table />  */}
    {/* <CubicSolver />  */}
-   <Graph /> 
-  
+   {/* <Graph />  */}
+  <History/>
   </div>  
   );
 };
