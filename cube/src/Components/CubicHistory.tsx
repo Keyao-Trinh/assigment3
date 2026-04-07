@@ -39,19 +39,31 @@ setCounting(counting+1);
   
 
 return(
-    <div>
+ <div>
 <Input
 counting={counting}
 />
-<table
+
+<table class="p-3 table-fixed border-2 rounded-4xl "
    onClick={() => (Input.setA(Number(aRef)), Input.setB(Number(bRef)), Input.setC(Number(cRef)), Input.setD(Number(dRef)))}
-  // document.getElementById("a") as HTMLElement 
+  <!-- // document.getElementById("a") as HTMLElement  -->
   >
+  <th>
+   <h1 class="p-2 font-serif text-md "> 
+    History
+  </h1> 
+  </th>
+    <tr>
+<th class="p-1 table-fixed border-2 border-spacing-2" >a</th>
+<th class="p-1 table-fixed border-2 border-spacing-2">b</th>
+<th class="p-1 table-fixed border-2 border-spacing-2">c</th>
+<th class="p-1 table-fixed border-2 border-spacing-2">d</th>
+    </tr>
 <tr>
-<td id="ahistory" >{aRef.current}</td>
-<td id="bhistory" >{bRef.current}</td>
-<td id="chistory" >{cRef.current}</td>
-<td id="dhistory" >{dRef.current}</td>
+<td id="ahistory" class="p-1 table-fixed border-2 border-spacing-2" >{aRef.current}</td>
+<td id="bhistory" class="p-1 table-fixed border-2 border-spacing-2" >{bRef.current}</td>
+<td id="chistory" class="p-1 table-fixed border-2 border-spacing-2" >{cRef.current}</td>
+<td id="dhistory" class="p-1 table-fixed border-2 border-spacing-2" >{dRef.current}</td>
 </tr>
 </table>
     </div>
