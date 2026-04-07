@@ -3,6 +3,7 @@
 import { CubicSolver } from "./CubicEquation.tsx";
 import { History } from "./CubicHistory.tsx";
 import { Table } from "./CubicTable.txs";
+import { Graph } from "./CubicGraph.txs";
 
 
 import React, { useEffect, useState } from 'react';
@@ -13,7 +14,7 @@ import React, { useEffect, useState } from 'react';
 
 
 export const Input = (counting:number) => {
-  console.log("inputed the input                     .");
+  console.log("inputed the input .");
 
   
   
@@ -73,6 +74,12 @@ cVaule={c}
 dVaule={d}
 />
       <Table
+aVaule={a}
+bVaule={b}
+cVaule={c}
+dVaule={d}
+        />
+      <Graph
 aVaule={a}
 bVaule={b}
 cVaule={c}
