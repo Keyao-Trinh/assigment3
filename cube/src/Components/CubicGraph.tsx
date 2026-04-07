@@ -1,16 +1,17 @@
 import { useRef, useEffect } from 'react';
+import { Input } from "./CubicInput.tsx";
 
+// let av = document.getElementById("a") as HTMLElement;
+// let a: number = Number(av);
+// let bv = document.getElementById("b") as HTMLElement;
+// let b: number = Number(bv);
+// let cv = document.getElementById("c") as HTMLElement;
+// let c: number = Number(cv);
+// let dv = document.getElementById("d") as HTMLElement;
+// let d: number = Number(dv);
+type abcd = {aVaule:number, bVaule:number, cVaule:number, dVaule:number,}
 
-let av = document.getElementById("a") as HTMLElement;
-let a: number = Number(av);
-let bv = document.getElementById("b") as HTMLElement;
-let b: number = Number(bv);
-let cv = document.getElementById("c") as HTMLElement;
-let c: number = Number(cv);
-let dv = document.getElementById("d") as HTMLElement;
-let d: number = Number(dv);
-
-export const Graph = () => {
+export const Graph = ({aVaule, bVaule, cVaule, dVaule}:abcd) => {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
     useEffect(() => {
 
@@ -24,7 +25,7 @@ export const Graph = () => {
         let i = -200;
         let y = 0;
         while (i < 200) {
-            y = ((a * i * i * i) + (b * i * i) + (c * i) + d);
+            y = (({aVaule} * i * i * i) + ({bVaule} * i * i) + ({cVaule} * i) + {dVaule});
             ctx!.lineTo(((i * 10) + 200), ((y * 10) + 200));
             i = (i + 0.01);
         }
@@ -34,7 +35,7 @@ export const Graph = () => {
         // canvas.addEventListener('click', () => {
         // });
       //  }
-    }, [av, bv, cv, dv]);
+    }, [aVaule, bVaule, cVaule, dVaule]);
 
     return (
         <canvas ref={canvasRef} width="200" height="200"/>
