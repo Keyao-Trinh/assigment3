@@ -1,6 +1,6 @@
 import { CubicSolver } from "./Components/CubicEquation.tsx";
 import { Graph } from "./Components/CubicGraph.tsx";
-// import { History } from "./Components/CubicHistory.tsx";
+import { History } from "./Components/CubicHistory.tsx";
 import { Input } from "./Components/CubicInput.tsx";
 import { Table } from "./Components/CubicTable.tsx";
 
@@ -10,7 +10,7 @@ export const App = () => {
 
  <div> 
   {/* <p></p> */}
-    <Input />
+    {/* <Input /> */}
   {/* <Table />  */}
    {/* <CubicSolver />  */}
    {/* <Graph />  */}
