@@ -6,8 +6,8 @@ import {useRef, useState, useEffect} from "react";
 import { Input } from "./CubicInput.tsx";
 
 
-type abcdc = {aVaule:number, bVaule:number, cVaule:number, dVaule:number, count:number}
-export const History = ({aVaule, bVaule, cVaule, dVaule, count}:abcdc) => {
+// type abcdc = {aVaule:number, bVaule:number, cVaule:number, dVaule:number, count:number}
+export const History = (/*{aVaule, bVaule, cVaule, dVaule, count}:abcdc*/) => {
     
  let [counting, setCounting] = useState<number>(0);
     
